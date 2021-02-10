@@ -20,10 +20,10 @@ SELECT
  safe_divide((r.budget -  (ROUND(r.planned_days*(safe_divide(SUM(r.mediacost), ((1+ ABS(DATE_DIFF(MIN(r.rundate), MAX(r.rundate), day))) - (ABS((1+ ABS(DATE_DIFF(MIN(r.rundate), MAX(r.rundate), day)))-  r.planned_days) ))) ),2))),(  r.planned_days - ((1+ ABS(DATE_DIFF(MIN(r.rundate), MAX(r.rundate), day))) - (ABS((1+ ABS(DATE_DIFF(MIN(r.rundate), MAX(r.rundate), day)))-  r.planned_days) ) ))) AS adjust_daily_spend,
 FROM
 
-  `analyticsdata-293414.gdsreporting.plandelivery` r
+  `DATA-TABLE-LOCATION` r
   
 GROUP BY
- r.publisher,
+  r.publisher,
   r.industry,
   r.mediaclient,
   r.planned_days,
