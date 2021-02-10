@@ -15,3 +15,7 @@ Create an integrated pacing report using our planning and delivery data for the 
 Data Warehouse: Google Big Query
 Data Connectors: Supermetrics
 Data Visualization: Google Data Studio
+
+
+# Author
+https://www.kathleenlara.com/
